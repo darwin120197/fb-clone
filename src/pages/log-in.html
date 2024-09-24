@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Login</title>
+
+    <!-- ========== CSS ========== -->
+    <link rel="stylesheet" href="../components/log-in/login.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+
+    <!-- ========== FONT AWESOME ========== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ========== REMIXICON ========== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <main class="facebook-login">
+      <div class="recent-logins">
+        <h2 class="brand-title">facebook</h2>
+        <div class="recent">
+          <h1>Recent Logins</h1>
+          <p>Click your picture or add an account.</p>
+        </div>
+        <div class="recent-accounts">
+          <div class="account">
+            <img
+              src="../assets/images/images-main/my-profile.jpg"
+              alt="my-profile"
+            />
+            <p class="account-name">Darwin</p>
+          </div>
+          <div class="account">
+            <img
+              src="../assets/images/images-main/profile-4.jpg"
+              alt="my-profile"
+            />
+            <p class="account-name">Nestle</p>
+          </div>
+          <div class="account">
+            <img
+              src="../assets/images/images-main/profile-1.jpg"
+              alt="my-profile"
+            />
+            <p class="account-name">Moises Noe</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========= LogIn Area ========= -->
+      <div class="login-area">
+        <div class="facebook-logo">
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <form action="#" id="login-form">
+          <div class="input-area">
+            <input
+              type="email"
+              placeholder="Email or phone number"
+              autocomplete="off"
+              required
+              id="email-input"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              autocomplete="off"
+              required
+              id="password-input"
+            />
+          </div>
+          <div class="login-forgot">
+            <button type="submit" class="btn" id="loginBtn">Log In</button>
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="create-account">
+            <button type="button" class="btn" id="create-account-btn">
+              <a href="#" class="create-item">Create new account</a>
+            </button>
+          </div>
+          <div class="meta">
+            <i class="fa-brands fa-meta"></i>
+            <p>Meta</p>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- ========= Sing Up Area ========= -->
+    <section class="signup-area" id="sign-up-area">
+      <form action="#" id="signup-form" method="post">
+        <div class="sign-up-title">
+          <h3 class="title">Sign Up</h3>
+          <p class="description">It's quick and easy.</p>
+          <i class="fa-solid fa-xmark" id="close-btn"></i>
+        </div>
+
+        <div class="signup-input-area">
+          <div class="input-row">
+            <input type="text" placeholder="First name" id="first-name" />
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <input type="text" placeholder="Last name" id="last-name" />
+            <i class="fa-solid fa-circle-exclamation"></i>
+          </div>
+          <div class="input-column">
+            <input
+              type="email"
+              placeholder="Email or mobile number"
+              id="email"
+            />
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <input type="password" placeholder="New password" id="password" />
+            <i class="fa-solid fa-circle-exclamation"></i>
+          </div>
+        </div>
+
+        <div class="birthday-gender-area">
+          <div class="birthday-area">
+            <div class="birthday-title">
+              <p>
+                Birthday<i
+                  class="fa-solid fa-circle-question"
+                  id="question-icon-one"
+                ></i>
+              </p>
+              <p class="create-element-one" id="create-element-one">
+                Click for more information
+              </p>
+              <i class="fa-solid fa-circle-exclamation"></i>
+
+              <p class="warning-message"></p>
+            </div>
+            <div class="birthday">
+              <select name="month" id="month" class="birthday-select">
+                <option value="">Month</option>
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+              </select>
+
+              <select name="day" id="day" class="birthday-select">
+                <option value="">Day</option>
+              </select>
+
+              <select name="year" id="year" class="birthday-select">
+                <option value="">Year</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="gender-area">
+            <div class="gender-title">
+              <p>
+                Gender<i
+                  class="fa-solid fa-circle-question"
+                  id="question-icon-two"
+                ></i>
+              </p>
+              <p class="create-element-two" id="create-element-two">
+                Click for more information
+              </p>
+              <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+            <div class="gender">
+              <div class="gender-option">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" />
+              </div>
+
+              <div class="gender-option">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" />
+              </div>
+
+              <div class="gender-option">
+                <label for="custom">Custom</label>
+                <input type="radio" id="custom" name="gender" value="custom" />
+              </div>
+            </div>
+
+            <div class="gender-custom" id="gender-custom">
+              <select name="gender" id="gender" class="gender-select">
+                <option value="">Select your pronoun</option>
+                <option value="1">She: "Wish her a happy birthday!"</option>
+                <option value="2">He: "Wish him a happy birthday!"</option>
+                <option value="3">They: "Wish them a happy birthday!"</option>
+              </select>
+              <p class="gender-description">
+                Your pronoun is visible to everyone.
+              </p>
+              <i class="fa-solid fa-circle-exclamation"></i>
+
+              <div class="gender-optional">
+                <input
+                  type="text"
+                  class="optional"
+                  placeholder="Gender(optional)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="terms-privacy-policy">
+          <div class="learn-more">
+            <p class="description">
+              People who use our service may have uploaded your contact
+              information to Facebook. <a href="#">Lear More.</a>
+            </p>
+          </div>
+          <div class="terms-privacy">
+            <p class="description">
+              By clicking Sign Up, you agree to our <a href="#">Terms,</a>
+              <a href="#">Privacy Policy,</a> and
+              <a href="#">Cookies Policy.</a> <br />
+              You may receive SMS Notifications from us and can opt out any
+              time.
+            </p>
+          </div>
+        </div>
+
+        <div class="btn-container">
+          <button
+            type="button"
+            value="Sign Up"
+            id="sign-up-btn"
+            class="sign-up-btn"
+          >
+            Sign Up
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ========== MAIN JS ========== -->
+    <script type="module" src="../components/log-in/login.js"></script>
+    <script type="module" src="../scripts/main.js"></script>
+  </body>
+</html>
