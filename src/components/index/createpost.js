@@ -150,7 +150,7 @@ function handlePost() {
             <div class="user-details-flex">
               <div class="user-profile">
                 <img
-                  src="../assets/images/images-main/my-profile.jpg"
+                  src="./src/assets/images/images-main/my-profile.jpg"
                   alt="my-profile"
                 />
               </div>
@@ -232,7 +232,7 @@ function handlePost() {
               <ul class="comment-product">
                 <li class="comment-list">
                   <img
-                    src="../assets/images/comment/bryan-panahon.jpg"
+                    src="./src/assets/images/comment/bryan-panahon.jpg"
                     alt="bryan"
                   />
                   <a href="" class="comment-item">
@@ -260,7 +260,7 @@ function handlePost() {
           <div class="comment-as">
             <div class="your-comment-input">
               <img
-                src="../assets/images/images-main/my-profile.jpg"
+                src="./src/assets/images/images-main/my-profile.jpg"
                 alt="my-profile"
               />
               <input type="text" placeholder="Comment as Darwin Lopez" />
