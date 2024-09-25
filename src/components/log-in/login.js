@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         password = document.getElementById("password-input");
 
       if (isEmailValid(email.value) && isPasswordLongEnough(password)) {
-        window.location.href = "index.html";
+        window.location.href = "../../index.html";
       } else {
         alert("invalid!");
 
