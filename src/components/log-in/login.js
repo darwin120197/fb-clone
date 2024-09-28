@@ -41,15 +41,20 @@ document.addEventListener("DOMContentLoaded", () => {
   //Create account button
   const createAccountBtn = document.getElementById("create-account-btn"),
     signUpArea = document.getElementById("sign-up-area"),
-    closeBtn = document.getElementById("close-btn");
+    closeBtn = document.getElementById("close-btn"),
+    main = document.querySelector(".facebook-login");
 
   if (createAccountBtn && closeBtn) {
     createAccountBtn.addEventListener("click", () => {
       signUpArea.classList.add("display-block");
+
+      main.style.opacity = ".3";
     });
 
     closeBtn.addEventListener("click", () => {
       signUpArea.classList.remove("display-block");
+
+      main.style.opacity = "";
     });
   } else {
     console.error("Create / Close button not found!");
